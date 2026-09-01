@@ -209,22 +209,25 @@ img {
 }
 
 .hero {
-  display: grid;
-  grid-template-columns: minmax(410px, 0.93fr) minmax(520px, 1.07fr);
-  min-height: 580px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 478px;
   border-bottom: 1px solid var(--line);
   background:
-    linear-gradient(90deg, rgba(255, 255, 255, 0.96) 0%, rgba(255, 255, 255, 0.9) 41%, rgba(255, 255, 255, 0.16) 64%),
-    var(--primary-soft);
+    linear-gradient(90deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.92) 42%, rgba(255, 255, 255, 0.42) 56%, rgba(255, 255, 255, 0.03) 72%),
+    url("../img/banner/hero-section.png") center center / cover no-repeat;
 }
 
 .hero-copy {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 600px;
-  margin-left: max(78px, calc((100vw - 1220px) / 2));
-  padding: 76px 24px 70px;
+  width: min(560px, calc(100% - 44px));
+  margin-left: max(92px, calc((100vw - 1220px) / 2));
+  padding: 70px 0 62px;
 }
 
 .eyebrow {
@@ -245,8 +248,8 @@ h3 {
 }
 
 h1 {
-  max-width: 590px;
-  font-size: clamp(54px, 5vw, 74px);
+  max-width: 560px;
+  font-size: clamp(50px, 5.2vw, 68px);
   font-weight: 700;
 }
 
@@ -263,8 +266,8 @@ h1 em {
 }
 
 .hero-text {
-  max-width: 410px;
-  margin: 0 0 28px;
+  max-width: 390px;
+  margin: 0 0 26px;
   color: #24201d;
   font-size: 17px;
 }
@@ -320,7 +323,7 @@ h1 em {
 }
 
 .hero-image {
-  min-height: 580px;
+  display: none;
 }
 
 .image-fallback {
@@ -611,7 +614,6 @@ cite {
   opacity: 1;
   transform: translateY(0);
 }
-
 @media (max-width: 1180px) {
   .navbar {
     padding-inline: 32px;
@@ -665,17 +667,13 @@ cite {
   }
 
   .hero {
-    grid-template-columns: 1fr;
+    min-height: 520px;
+    background-position: 62% center;
   }
 
   .hero-copy {
-    max-width: 680px;
-    margin: 0 auto;
-    padding-top: 54px;
-  }
-
-  .hero-image {
-    min-height: 390px;
+    margin-left: 32px;
+    padding-block: 58px;
   }
 
   .proof-strip {
@@ -716,8 +714,17 @@ cite {
     width: 124px;
   }
 
+  .hero {
+    min-height: 520px;
+    background:
+      linear-gradient(90deg, rgba(255, 255, 255, 0.96) 0%, rgba(255, 255, 255, 0.88) 58%, rgba(255, 255, 255, 0.36) 100%),
+      url("../img/banner/hero-coach.jpeg") 64% center / cover no-repeat;
+  }
+
   .hero-copy {
-    padding: 44px 20px;
+    width: calc(100% - 40px);
+    margin: 0 20px;
+    padding: 44px 0;
   }
 
   h1 {
@@ -801,6 +808,7 @@ cite {
     animation-duration: 0.01ms !important;
   }
 }
+
 .hero-image img {
   object-position: center center;
 }
