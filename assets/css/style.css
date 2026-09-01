@@ -213,7 +213,7 @@ img {
   position: relative;
   display: flex;
   align-items: center;
-  min-height: 478px;
+  height: 710px;
   border-bottom: 1px solid var(--line);
   background:
     linear-gradient(90deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.92) 42%, rgba(255, 255, 255, 0.42) 56%, rgba(255, 255, 255, 0.03) 72%),
