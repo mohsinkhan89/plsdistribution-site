@@ -57,26 +57,6 @@ document.querySelectorAll(".reveal").forEach((element, index) => {
   revealObserver.observe(element);
 });
 
-document.querySelectorAll(".animated-icon lord-icon").forEach((icon) => {
-  const iconShell = icon.closest(".animated-icon");
-  const markReady = () => iconShell?.classList.add("is-lordicon-ready");
-  const checkRendered = () => {
-    if (icon.shadowRoot?.children.length || icon.querySelector("svg, canvas")) {
-      markReady();
-    }
-  };
-
-  icon.addEventListener("ready", markReady, { once: true });
-  icon.addEventListener("load", markReady, { once: true });
-
-  if (window.customElements?.whenDefined) {
-    customElements.whenDefined("lord-icon").then(() => {
-      requestAnimationFrame(checkRendered);
-      window.setTimeout(checkRendered, 600);
-      window.setTimeout(checkRendered, 1400);
-    });
-  }
-});
 
 window.addEventListener("scroll", () => {
   backToTop.classList.toggle("is-visible", window.scrollY > 520);
