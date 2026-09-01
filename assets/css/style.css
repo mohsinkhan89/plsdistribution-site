@@ -1242,17 +1242,16 @@ body {
 .whatsapp-modal { bottom: 90px; }
 @media (max-width: 760px) { .whatsapp-float { bottom: 18px; } .back-to-top { bottom: 82px; } .whatsapp-modal { bottom: 86px; } }
 
-/* minimal centered header */
-.header-minimal { grid-template-columns: 1fr auto 1fr; }
-.header-minimal .brand { justify-self: center; width: 200px; min-width: 160px; height: 58px; }
+/* minimal header */
+.header-minimal { grid-template-columns: auto 1fr; }
+.header-minimal .brand { justify-self: start; width: 200px; min-width: 160px; height: 58px; }
 .header-minimal .nav-actions { display: flex; }
-.header-minimal .nav-actions-left { justify-self: start; }
 .header-minimal .nav-actions-right { justify-self: end; }
 .header-minimal .nav-actions.is-open { display: flex; }
 @media (max-width: 760px) {
   .header-minimal {
     grid-template-columns: 1fr;
-    justify-items: center;
+    justify-items: start;
     min-height: 74px;
     padding: 5px 18px;
   }
