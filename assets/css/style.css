@@ -285,7 +285,6 @@ h1 em {
   background-size: cover;
 }
 
-
 .hero-image img,
 .service-media img,
 .result-image img,
@@ -305,8 +304,7 @@ h1 em {
 }
 .hero-image::after,
 .service-media::after,
-.result-image::after,
-.cta-image::after {
+.result-image::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -547,7 +545,7 @@ cite {
 
 .cta-panel {
   display: grid;
-  grid-template-columns: 1fr minmax(320px, 430px) 240px;
+  grid-template-columns: 1fr minmax(340px, 430px) 240px;
   align-items: center;
   gap: 24px;
   max-width: 1210px;
@@ -556,7 +554,7 @@ cite {
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 7px;
-  background: rgba(255, 255, 255, 0.88);
+  background: rgba(255, 255, 255, 0.9);
   box-shadow: 0 8px 30px rgba(119, 96, 68, 0.1);
 }
 
@@ -572,6 +570,7 @@ cite {
 .cta-image {
   align-self: stretch;
   min-height: 180px;
+  background: var(--primary-soft);
 }
 
 .cta-actions {
@@ -809,26 +808,10 @@ cite {
   }
 }
 
-.hero-image img {
-  object-position: center center;
-}
-
-.service-grid .service-media:nth-child(1) img {
-  object-position: center center;
-}
-
-.service-grid .service-media:nth-child(4) img {
-  object-position: center center;
-}
-
-.service-grid .service-media:nth-child(5) img {
-  object-position: center center;
-}
-
-.service-grid .service-media:nth-child(8) img {
-  object-position: center center;
-}
-
+.service-grid .service-media:nth-child(1) img,
+.service-grid .service-media:nth-child(4) img,
+.service-grid .service-media:nth-child(5) img,
+.service-grid .service-media:nth-child(8) img,
 .cta-image img {
   object-position: center center;
 }
