@@ -16,10 +16,10 @@ imageBlocks.forEach((block) => {
   tester.src = src;
 });
 
-menuToggle.addEventListener("click", () => {
-  const isOpen = navMenu.classList.toggle("is-open");
-  navActions.classList.toggle("is-open", isOpen);
-  menuToggle.setAttribute("aria-expanded", String(isOpen));
+menuToggle?.addEventListener("click", () => {
+  const isOpen = navMenu?.classList.toggle("is-open");
+  navActions?.classList.toggle("is-open", isOpen);
+  menuToggle?.setAttribute("aria-expanded", String(isOpen));
   menuToggle.innerHTML = isOpen
     ? '<i class="fa-solid fa-xmark"></i>'
     : '<i class="fa-solid fa-bars"></i>';
@@ -27,10 +27,10 @@ menuToggle.addEventListener("click", () => {
 
 document.querySelectorAll(".nav-menu a").forEach((link) => {
   link.addEventListener("click", () => {
-    navMenu.classList.remove("is-open");
-    navActions.classList.remove("is-open");
-    menuToggle.setAttribute("aria-expanded", "false");
-    menuToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
+    navMenu?.classList.remove("is-open");
+    navActions?.classList.remove("is-open");
+    menuToggle?.setAttribute("aria-expanded", "false");
+    if (menuToggle) menuToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
   });
 });
 
