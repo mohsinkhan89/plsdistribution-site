@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -219,6 +219,30 @@
     </section>
   </main>
 
+
+  <button class="whatsapp-float" type="button" aria-label="Open WhatsApp chat" aria-controls="whatsappModal" aria-expanded="false">
+    <i class="fa-brands fa-whatsapp"></i>
+  </button>
+
+  <div class="whatsapp-modal" id="whatsappModal" role="dialog" aria-modal="false" aria-labelledby="whatsappModalTitle" hidden>
+    <div class="whatsapp-card">
+      <button class="whatsapp-close" type="button" aria-label="Close WhatsApp chat">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="whatsapp-card-head">
+        <span><i class="fa-brands fa-whatsapp"></i></span>
+        <div>
+          <p class="eyebrow">WhatsApp</p>
+          <h2 id="whatsappModalTitle">Start Your Coaching Chat</h2>
+        </div>
+      </div>
+      <p class="whatsapp-copy">Tell us your goal and we will help you choose the right coaching plan.</p>
+      <textarea id="whatsappMessage" rows="4">Hi Peak Physique Coaching, I want to start coaching. Can you help me?</textarea>
+      <a class="btn btn-gold whatsapp-send" href="https://wa.me/0000000000?text=Hi%20Peak%20Physique%20Coaching%2C%20I%20want%20to%20start%20coaching.%20Can%20you%20help%20me%3F" target="_blank" rel="noopener">
+        <i class="fa-brands fa-whatsapp"></i> Send on WhatsApp
+      </a>
+    </div>
+  </div>
   <button class="back-to-top" type="button" aria-label="Back to top">
     <i class="fa-solid fa-arrow-up"></i>
   </button>
