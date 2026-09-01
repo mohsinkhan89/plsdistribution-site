@@ -1249,7 +1249,24 @@ body {
 .header-minimal .nav-actions-left { justify-self: start; }
 .header-minimal .nav-actions-right { justify-self: end; }
 .header-minimal .nav-actions.is-open { display: flex; }
-@media (max-width: 760px) { .header-minimal { grid-template-columns: 1fr; gap: 12px; justify-items: center; } .header-minimal .brand { order: 1; width: 132px; min-width: 132px; } .header-minimal .nav-actions-left { order: 2; justify-self: stretch; width: 100%; } .header-minimal .nav-actions-right { order: 3; justify-self: stretch; width: 100%; } .header-minimal .nav-actions { width: 100%; } }
+@media (max-width: 760px) {
+  .header-minimal {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    min-height: 74px;
+    padding: 5px 18px;
+  }
+
+  .header-minimal .brand {
+    width: 132px;
+    min-width: 132px;
+  }
+
+  .header-minimal .nav-actions,
+  .header-minimal .nav-actions.is-open {
+    display: none;
+  }
+}
 
 /* footer */
 .site-footer { border-top: 1px solid var(--line); background: #fff; padding: 18px 20px; text-align: center; }
