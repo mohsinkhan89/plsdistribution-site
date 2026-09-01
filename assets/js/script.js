@@ -46,8 +46,14 @@ const revealObserver = new IntersectionObserver(
   { threshold: 0.14 }
 );
 
+document.querySelectorAll("main > section").forEach((section, index) => {
+  section.classList.add("section-reveal");
+  section.style.transitionDelay = `${Math.min(index * 80, 280)}ms`;
+  revealObserver.observe(section);
+});
+
 document.querySelectorAll(".reveal").forEach((element, index) => {
-  element.style.transitionDelay = `${Math.min(index * 60, 360)}ms`;
+  element.style.transitionDelay = `${Math.min(index * 55, 330)}ms`;
   revealObserver.observe(element);
 });
 
