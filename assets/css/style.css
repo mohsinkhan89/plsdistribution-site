@@ -547,7 +547,7 @@ cite {
 
 .cta-panel {
   display: grid;
-  grid-template-columns: 1fr minmax(340px, 430px) 240px;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 24px;
   max-width: 1210px;
@@ -561,7 +561,8 @@ cite {
 }
 
 .cta-copy {
-  padding-left: 88px;
+  /* padding-left: 88px; */
+  padding: 20px 0px 20px 50px;
 }
 
 .cta-copy h2 {
@@ -579,6 +580,7 @@ cite {
   flex-direction: column;
   align-items: stretch;
   padding-right: 44px;
+  margin-top: 15px;
 }
 
 .back-to-top {
@@ -712,7 +714,7 @@ cite {
   }
 
   .brand img {
-    width: 124px;
+    width: 150px;
   }
 
   .hero {
@@ -1259,6 +1261,7 @@ body {
   .header-minimal .brand {
     width: 132px;
     min-width: 132px;
+    justify-self: center;
   }
 
   .header-minimal .nav-actions,

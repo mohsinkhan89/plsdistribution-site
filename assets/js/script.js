@@ -63,7 +63,7 @@ const whatsappModal = document.querySelector(".whatsapp-modal");
 const whatsappClose = document.querySelector(".whatsapp-close");
 const whatsappMessage = document.querySelector("#whatsappMessage");
 const whatsappSend = document.querySelector(".whatsapp-send");
-const whatsappBaseUrl = "https://wa.me/0000000000?text=";
+const whatsappBaseUrl = "https://wa.me/447951035992?text=";
 
 const updateWhatsAppLink = () => {
   if (!whatsappMessage || !whatsappSend) return;
