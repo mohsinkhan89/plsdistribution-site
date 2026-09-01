@@ -708,7 +708,7 @@ cite {
 
   .navbar {
     min-height: 74px;
-    padding: 16px 18px;
+    padding: 5px 18px;
   }
 
   .brand img {
@@ -1241,3 +1241,8 @@ body {
     animation: none !important;
   }
 }
+/* floating action position swap */
+.whatsapp-float { bottom: 22px; }
+.back-to-top { bottom: 86px; }
+.whatsapp-modal { bottom: 90px; }
+@media (max-width: 760px) { .whatsapp-float { bottom: 18px; } .back-to-top { bottom: 82px; } .whatsapp-modal { bottom: 86px; } }
