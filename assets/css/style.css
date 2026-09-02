@@ -8,8 +8,8 @@
   --primary-dark: #132866;
   --primary-soft: #eef2ff;
   --shadow: 0 22px 55px rgba(23, 19, 15, 0.12);
-  --serif: "Playfair Display", Georgia, serif;
-  --sans: "Inter", Arial, sans-serif;
+  --heading: "Sora", Arial, sans-serif;
+  --sans: "Manrope", Arial, sans-serif;
 }
 
 * {
@@ -257,7 +257,7 @@ h1,
 h2,
 h3 {
   margin: 0;
-  font-family: var(--serif);
+  font-family: var(--heading);
   line-height: 1.08;
 }
 
@@ -346,7 +346,7 @@ h1 em {
   place-items: center;
   padding: 22px;
   color: rgba(20, 17, 15, 0.42);
-  font-family: var(--serif);
+  font-family: var(--heading);
   font-size: 28px;
   text-align: center;
 }
@@ -1385,7 +1385,7 @@ body {
   top: 16px;
   right: 18px;
   color: rgba(19, 40, 102, 0.11);
-  font-family: var(--serif);
+  font-family: var(--heading);
   font-size: 48px;
   font-weight: 700;
   line-height: 1;
